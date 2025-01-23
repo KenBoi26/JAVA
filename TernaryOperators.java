@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class ternary_operators {
+public class TernaryOperators {
     public static void main(String[] args) {
         //Type your code here
         Scanner sc = new Scanner(System.in);

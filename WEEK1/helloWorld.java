@@ -1,7 +1,7 @@
 // to compile the Java code type javac <file name>.java in the terminal
 // and makes a .class file, this contains the byte code
 // java .\<file name>.java or java <class name> to run the code
-
+package WEEK1;
 
 
 import java.util.*;

@@ -4,8 +4,8 @@
 package WEEK1;
 
 
-import java.util.*;
-public class helloWorld {
+// import java.util.*; --> this imports all the classes in the package
+public class HelloWorld {
     // public ensure that the class can be accessed outisde the package
     // static means that the method belongs to the class and not any object of the class
     public static void main(String[] args) {

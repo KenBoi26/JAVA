@@ -21,5 +21,7 @@ public class Conditionals {
         }else{
             System.out.println("The student has failed");
         }
+        sc.close();
     }
+    
 }

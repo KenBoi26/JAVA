@@ -14,7 +14,10 @@ public class TernaryOperators {
         String result = (pos == 1 && div == 1) ? "Both integers are positive and not multiples of 2" : "The condition is not met for both integers";
         
         System.out.println(result);
+        sc.close();
         
     }
+
+
 }
 

@@ -36,5 +36,7 @@ public class CoordinateGeometry {
             System.out.println("Invalid choice. Please select a valid option.");
             break;
     }
+
+    sc.close();
  }
 }

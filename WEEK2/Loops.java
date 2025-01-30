@@ -5,7 +5,7 @@ public class Loops {
 
 
 
-    public static void main(String[] args){
+    public static void main1(String[] args){
         Scanner sc = new Scanner(System.in);
         
         int num = sc.nextInt();
@@ -25,6 +25,23 @@ public class Loops {
         }else{
             System.out.printf("The number of digits in %d does not match the sum of its digits.", og);
         }
+    }
+
+    public static void main2(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int num = sc.nextInt();
+        int sum = 0;
+        
+        
+        do{
+            if(num%2 != 0){
+                sum += (num%10)*(num%10);
+            }
+            
+            num/=10;
+        }while(num > 0);
+        
+        System.out.printf("%d", sum);
     }
 
 }

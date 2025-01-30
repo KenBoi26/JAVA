@@ -1,6 +1,6 @@
 package WEEK2;
 import java.util.Scanner;
-public class Loops {
+public class DoWhileLoop {
     // You are using Java
 
 

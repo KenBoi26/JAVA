@@ -25,6 +25,8 @@ public class DoWhileLoop {
         }else{
             System.out.printf("The number of digits in %d does not match the sum of its digits.", og);
         }
+
+        sc.close();
     }
 
     public static void main2(String[] args){
@@ -42,6 +44,10 @@ public class DoWhileLoop {
         }while(num > 0);
         
         System.out.printf("%d", sum);
+
+        sc.close();
     }
+
+    
 
 }

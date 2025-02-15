@@ -1,6 +1,7 @@
 package WEEK3;
 
 import java.util.Scanner;
+import java.util.Arrays;
 
 // You are using Java
 class ExpenseAnalyzer {
@@ -52,6 +53,30 @@ class StringOps {
         }
     }
 }
+
+// You are using Java
+class EncoderDecoder {
+    //type your code here
+    public String encode(String[] messages){
+        StringBuilder encodedString = new StringBuilder();
+        for(int i=0; i<messages.length; i++){
+            encodedString.append(messages[i]);
+            if(i<messages.length - 1){
+                encodedString.append("#");
+            }
+        }
+        
+        return encodedString.toString();
+    }
+    
+    public String[] decode(String encodedString){
+        return encodedString.split("#");
+    }
+    
+    
+}
+
+
 
 public class Static {
     // You are using Java
@@ -110,4 +135,37 @@ public class Static {
 
         scanner.close();
     }
+
+    public static void main4(String[] args) {
+        EncoderDecoder encoderDecoder = new EncoderDecoder();
+        Scanner scanner = new Scanner(System.in);
+        String userInput = scanner.nextLine();
+        String[] messages = userInput.split(" ");
+        String encoded = encoderDecoder.encode(messages);
+        System.out.println("Encoded: " + encoded);
+        String[] decoded = encoderDecoder.decode(encoded);
+        System.out.println("Decoded: ");
+        for (String message : decoded) {
+            System.out.println(message);
+        }
+
+        scanner.close();
+    }
+
+    // You are using Java
+    public static void main5(String[] args) {
+        //type your code here
+        Scanner sc = new Scanner(System.in);
+        
+        String inp = sc.nextLine();
+        
+        if(!inp.isEmpty()){
+            char[] charArray = inp.toCharArray();
+            System.out.println(Arrays.toString(charArray));
+        }
+        
+        sc.close();
+    }
+
+
 }
